@@ -5,7 +5,7 @@ Personal academic site covering research, leadership, and coursework in
 data science, astrophysics, and sustainability engineering. Built for
 scholarship and college applications.
 
-**Live site:** https://PUT_YOUR_GITHUB_USERNAME_HERE.github.io
+**Live site:** https://vats-math.github.io
 
 ## Stack
 
