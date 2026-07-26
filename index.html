@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sharanya Vats — Space Data Science &amp; Astrophysics</title>
+<meta name="description" content="Portfolio of Sharanya Vats — rising high school junior working in data science, astrophysics research, and sustainability engineering." />
+
+<!-- Favicon: small ringed-planet SVG, see /assets/favicon.svg -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="starfield" aria-hidden="true"></canvas>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-mark" href="#top">S<span>·</span>VATS</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <!-- Moon toggle: 🌝 full moon face shown in light mode (click → dark),
+           🌚 new moon face shown in dark mode (click → light). Logic lives in script.js -->
+      <button id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">🌝</button>
+      <button id="nav-toggle" class="nav-toggle-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- ============================ HERO ============================ -->
+  <header class="hero wrap">
+    <p class="eyebrow">Rising Junior · Class of 2028 · Alliance Academy for Innovation</p>
+    <h1>Sharanya Vats</h1>
+    <p class="role">Data science, astrophysics research &amp; sustainable systems engineering</p>
+    <div class="abstract">
+      <p>
+        I work at the intersection of industrial engineering, data science, and astrophysics —
+        modeling the carbon and water footprint of AI infrastructure, studying how light
+        pollution degrades astronomical observation, and prototyping ways to accelerate the
+        deorbiting of space debris. I'm aiming toward a B.S. in Industrial Engineering with a
+        concentration in data science and a minor in astrophysics, a Ph.D. in astrophysics or
+        applied mathematics, and a career turning space and climate data into decisions that matter.
+      </p>
+    </div>
+    <div class="hero-actions">
+      <!-- Upload your résumé PDF to assets/files/ using this exact filename, or change the filename below to match yours -->
+      <a class="btn btn-primary" href="assets/files/Sharanya_Vats_Resume.pdf">Download résumé</a>
+      <a class="btn btn-ghost" href="#research">See research →</a>
+    </div>
+  </header>
+
+  <!-- ============================ ABOUT ============================ -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>About</h2>
+        <span class="section-note">Cumming-Forsyth, GA</span>
+      </div>
+      <div class="about-grid">
+        <div class="reveal">
+          <p>
+            I'm a rising high school junior who first got interested in data because of a
+            question that kept nagging at me: what is our growing reliance on computing quietly
+            costing the environment? That question turned into <em>CarbonLens</em>, an
+            open-source tool comparing AI datacenter water and power use against real Atlanta
+            infrastructure data, and into a string of research papers on AI's carbon footprint,
+            light pollution's effect on telescopes, and low-propulsion ways to deorbit space debris.
+          </p>
+          <p>
+            Outside of research, I founded a chapter of a national sustainability
+            organization, lead an AI research team through the New York Junior Academy of
+            Sciences, and teach — from SAT prep to competition math — because I think
+            explaining an idea well is the fastest way to actually understand it.
+          </p>
+        </div>
+        <div class="portrait-col reveal">
+          <!--
+            TODO (photo): add your professional headshot to
+            assets/images/profile.jpg, then this image will display automatically.
+            Recommended: a square-ish, well-lit photo at least 800px on the short side.
+          -->
+          <img class="portrait" src="assets/images/profile.jpg" alt="Portrait of Sharanya Vats" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ EDUCATION ============================ -->
+  <section class="section" id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Education</h2>
+      </div>
+      <div class="edu-card reveal">
+        <h3>Alliance Academy for Innovation of Cumming-Forsyth</h3>
+        <p class="meta">Class of 2028 · High School Junior</p>
+        <div class="gpa-row">
+          <div><b>4.0</b>unweighted GPA</div>
+          <div><b>4.36</b>weighted GPA</div>
+        </div>
+        <p style="color:var(--text-muted); font-size:14.5px; margin:0 0 6px;"><strong>Relevant coursework</strong></p>
+        <ul>
+          <li>DATA 1501: Introduction to Data Science</li>
+          <li>AP Seminar, AP Calculus AB/BC, AP Physics 1, AP Chemistry</li>
+          <li>AP Precalculus, AP Statistics, AP Computer Science Principles</li>
+          <li>AP Psychology, AP Computer Science A</li>
+        </ul>
+        <p style="color:var(--text-muted); font-size:14.5px; margin:16px 0 6px;"><strong>Expected future coursework, 2027–2028</strong></p>
+        <ul>
+          <li>AP Research, AP Physics 2 and C</li>
+          <li>Georgia Tech Dual Enrollment — Linear Algebra and Multivariable Calculus</li>
+          <li>Georgia Tech Distance Computer Science</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ RESEARCH ============================ -->
+  <section class="section" id="research">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Research &amp; Projects</h2>
+        <span class="section-note">Independent work, science fair &amp; national competitions</span>
+      </div>
+
+      <div class="research-grid">
+
+        <article class="paper wide reveal">
+          <span class="tag">Independent project · deployed on GitHub</span>
+          <h3>CarbonLens — an open-source AI sustainability framework</h3>
+          <p class="metric">GPT-3 ≈ 700k liters water · cross-referenced against Atlanta datacenter power draw</p>
+          <p>
+            A low-code tool I built to track the carbon and water tradeoffs of AI datacenters.
+            It pairs public model-training data with regional utility data on an interactive
+            dashboard, built with HTML/JavaScript and Power BI.
+          </p>
+
+          <!--
+            ============================================================
+            CHATBOT EMBED — step by step:
+            1. Go to your Space on huggingface.co (e.g. huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE)
+            2. Click the "⋮" menu near the top of the Space → "Embed this Space"
+            3. Hugging Face gives you a URL shaped like:
+               https://YOUR_USERNAME-YOUR_SPACE.hf.space
+            4. Paste that URL into the src="" below, replacing the placeholder text.
+            5. Delete this whole comment block (optional, just for tidiness).
+            ============================================================
+          -->
+          <div class="ai-lab-frame">
+            <iframe
+              src="PUT_YOUR_HUGGING_FACE_SPACE_EMBED_URL_HERE"
+              title="CarbonLens AI Assistant"
+              loading="lazy">
+            </iframe>
+          </div>
+        </article>
+
+        <article class="paper reveal">
+          <span class="tag">Research paper</span>
+          <h3>Light Pollution's Mathematical Impact on Astrophysical Observations</h3>
+          <p class="metric">Δm = 2.5 log(32/25 nW/cm²/sr)</p>
+          <p>Quantified a 0.37-magnitude loss in Atlanta's night sky (a 28% increase) using VIIRS satellite radiance data and a derived limiting-magnitude equation.</p>
+        </article>
+
+        <article class="paper reveal">
+          <span class="tag">Research paper</span>
+          <h3>Power Law Scaling of AI Carbon Emissions with Model Size</h3>
+          <p class="metric">CO₂ ∝ params^1.9</p>
+          <p>Derived a scaling law from GPT-3 and BERT training data using log-log regression (α ≈ 1.8–2.0), modeled in Excel.</p>
+        </article>
+
+        <article class="paper reveal">
+          <span class="tag">Science fair experiment</span>
+          <h3>Effects of AI-Level CO₂ Production on Plant pH &amp; Phosphate Levels</h3>
+          <p class="metric">pH 6.8 → 6.1 (spinach) · 7.7 → 6.1 (philodendron)</p>
+          <p>Exposed Malabar spinach and philodendron to 1,200 ppm CO₂ — datacenter-level concentrations — and measured the resulting drop in soil pH against untreated controls.</p>
+        </article>
+
+        <article class="paper reveal">
+          <span class="tag">National finalist · Modeling the Future Challenge</span>
+          <h3>AI Data Center Risk: Carbon Emissions and Water Depletion Threats to Metro Atlanta</h3>
+          <p class="metric">Exponential emissions &amp; water-stress index modeling, Python</p>
+          <p>Built an exponential emissions-projection model and a water-stress index using government-backed sources, comparing mitigated, worsened, and base-case scenarios for Metro Atlanta's freshwater supply.</p>
+        </article>
+
+        <article class="paper reveal">
+          <span class="tag">Submitted · Toshiba ExploraVision</span>
+          <h3>Clear-Orbit Skin (COS-Skin): An Orbital Debris Reducer</h3>
+          <p class="metric">Passive drag-coefficient coating · no propulsion required</p>
+          <p>Designed a voltage-activated smart coating that raises a satellite's atmospheric drag coefficient to speed up deorbiting, evaluated against drag sails, tethers, and propulsion through a systems-engineering tradeoff analysis.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ EXPERIENCE ============================ -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Leadership &amp; Experience</h2>
+      </div>
+
+      <p class="subhead">Leadership &amp; service</p>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <span class="tl-date">Jan 2026 – Present</span>
+          <h3>Team Lead, Human-Centered AI</h3>
+          <p class="org">New York Junior Academy of Sciences (NYJAS)</p>
+          <ul>
+            <li>Led AI research team as high school representative in international STEM leadership program</li>
+            <li>Coordinated research projects and represented peers in professional scientific settings</li>
+            <li>Developed leadership through competitive selection and international program participation</li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-date">2025 – Present</span>
+          <h3>Founder &amp; President</h3>
+          <p class="org">Eco MoCo ATL</p>
+          <ul>
+            <li>Founded student chapter of national organization; built officer team with service events and educational workshops</li>
+            <li>Developed membership systems, volunteer coordination, and community outreach strategies</li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-date">Jan – Jun 2026</span>
+          <h3>Climate Leaders Fellowship Recipient</h3>
+          <p class="org">Stanford-affiliated national fellowship</p>
+          <ul>
+            <li>Selected for national climate leadership program through competitive application process</li>
+            <li>Represented school in sustainability initiatives, demonstrating initiative and commitment</li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-date">Mar 2025 – May 2026</span>
+          <h3>Sophomore Council</h3>
+          <p class="org">HOSA — Future Health Professionals, Alliance Academy Chapter</p>
+          <ul>
+            <li>Selected as 1 of 14 leaders (100+ applicants) to plan events for 200+ member chapter at Alliance</li>
+            <li>Executed volunteer programs and professional development activities</li>
+            <li>Worked under several different committees in the CTSO with experience leading workshops and delivering reports</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="subhead">Teaching &amp; professional experience</p>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <span class="tl-date">2025 – Present</span>
+          <h3>Data Analyst Intern</h3>
+          <p class="org">STEM·E Youth Career Development Program</p>
+          <ul>
+            <li>Analyzed engagement data to optimize program structure and delivered reports to leadership</li>
+            <li>Built Power BI dashboards for organizational decision-making</li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-date">Dec 2025 – Present</span>
+          <h3>SAT Tutor</h3>
+          <p class="org">Schoolhouse.world</p>
+          <ul>
+            <li>Deliver live SAT instruction on a platform of 100,000+ learners across 180+ countries</li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-date">Feb – Nov 2025</span>
+          <h3>Math Instructor &amp; Trainer</h3>
+          <p class="org">Mathnasium</p>
+          <ul>
+            <li>Taught 20+ students weekly and trained incoming instructors</li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-date">Aug 2024 – Present</span>
+          <h3>Volunteer Instructor</h3>
+          <p class="org">North South Foundation</p>
+          <ul>
+            <li>Instruct students across the country in mathematics, spelling, and vocabulary at the competition level</li>
+            <li>Generate all profits from instruction through the national program, later delivered to underprivileged students in India unable to afford tuition</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="subhead">Competitive experience</p>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <span class="tl-date">2025 – Present</span>
+          <h3>Modeling the Future Challenge — National Finalist</h3>
+          <ul>
+            <li>Selected as 1 of 15 national finalist teams through Scenario Phase excellence</li>
+            <li>Named Climate Resilience Award Finalist (1 of 8 nationally recognized teams)</li>
+            <li>Advanced to Finalist Phase demonstrating strategic analysis and risk modeling skills</li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-date">2026</span>
+          <h3>3rd Place, HOSA State Leadership Conference — Health Education</h3>
+          <ul>
+            <li>Earned 3rd place at state level among top competitors through strategic preparation and polished delivery</li>
+            <li>Demonstrated ability to research, organize information, and present effectively under competitive pressure</li>
+            <li>Developed frameworks for high-stakes competition prep applicable to FBLA state/national events</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ AWARDS ============================ -->
+  <section class="section" id="awards">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Awards &amp; Recognition</h2>
+      </div>
+      <div class="chip-row reveal">
+        <span class="chip">AP Scholar with Distinction</span>
+        <span class="chip">NYJAS Member — one of a few thousand nationally</span>
+        <span class="chip">Climate Leaders Fellow (Stanford-affiliated)</span>
+        <span class="chip">Modeling the Future Challenge — National Finalist</span>
+        <span class="chip">Climate Resilience Award Finalist (1 of 8 nationally)</span>
+        <span class="chip">HOSA State — 3rd Place, Health Education</span>
+        <span class="chip">HOSA International Leadership Conference Participant</span>
+        <span class="chip">Rising Star Student for Aerospace</span>
+        <span class="chip">4th in Class Rank</span>
+        <span class="chip">Beta Club Member</span>
+        <span class="chip">National Society for High School Students</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SKILLS ============================ -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Skills</h2>
+      </div>
+      <div class="chip-row reveal">
+        <span class="chip">Leadership</span>
+        <span class="chip">Data Analysis (Power BI)</span>
+        <span class="chip">Team Building</span>
+        <span class="chip">Event Planning</span>
+        <span class="chip">Professional Communication</span>
+        <span class="chip">Competition Strategy</span>
+        <span class="chip">Organization Systems</span>
+        <span class="chip">HTML / CSS / JavaScript</span>
+        <span class="chip">Python</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ FOOTER / CONTACT ============================ -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <h2>Let's talk</h2>
+        <p class="tagline">Reach out about research, collaboration, or anything space-and-data related.</p>
+      </div>
+      <ul class="contact-links">
+        <li><a href="mailto:sharanyakvats@gmail.com">Email</a></li>
+        <li><a href="PUT_YOUR_GITHUB_URL_HERE" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="PUT_YOUR_LINKEDIN_URL_HERE" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="PUT_YOUR_BLUESKY_URL_HERE" target="_blank" rel="noopener">Bluesky</a></li>
+      </ul>
+    </div>
+    <div class="credit">
+      <span>© 2026 Sharanya Vats</span>
+      <span>Built &amp; hosted on GitHub Pages</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
